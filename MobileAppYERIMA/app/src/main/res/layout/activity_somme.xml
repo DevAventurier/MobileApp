@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8A8A"
+    tools:context=".SommeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/two" />
+
+    <EditText
+        android:id="@+id/TextNombre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:hint="Nombre 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNombre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextNombre1"
+        android:layout_marginTop="8dp"
+        android:hint="Nombre 2"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCalculer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNombre2"
+        android:layout_marginTop="16dp"
+        android:text="Calculer" />
+
+    <TextView
+        android:id="@+id/textViewResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculer"
+        android:layout_marginTop="16dp"
+        android:text="Résultat : "
+        android:textSize="18sp" />
+
+</RelativeLayout>
